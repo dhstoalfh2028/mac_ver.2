@@ -341,7 +341,7 @@ nav>.menu>.login:hover>.txt {
     background-image: url(img/HP_Header_PC_2880x1330.jpg);
     position: relative;
     background-size: cover;
-    background-position-x: -172px;
+    background-position-x: 100%;
 }
 .visual>.txt {
     color: white;
@@ -1099,9 +1099,9 @@ footer>.wrap>.con2>.con3>.wrap>a:last-child:hover {
     nav>.menu>.logo {
         margin-left: 30px;
     }
-    .visual {
+    /* .visual {
         background-position-x: 1200px ;
-    }
+    } */
     .visual>.txt {
         padding-left: 50px;
     }
@@ -1471,6 +1471,20 @@ footer>.wrap>.con2>.con3>.wrap>a:last-child:hover {
 }
 
 @media (max-width:650px) {
+    .visual {
+        height: 1000px;
+        background-color: black;
+        background-image: none;
+    }
+
+    .visual>.img {
+        background-image: url(img/757e39ece3ca3228034ce4dd54da5542.jpg);
+        height: 700px;
+    background-position-y: -100px;
+    }
+    .visual>.txt {
+        transform: translateY(107%);
+    }
     .visual>.txt>h1 {
         font-size: 28px;
     }
@@ -1518,11 +1532,7 @@ footer>.wrap>.con2>.con3>.wrap>a:last-child:hover {
 }
 
 @media (max-width:520px)  {
-    .visual>.img {
-        background-image: url(img/757e39ece3ca3228034ce4dd54da5542.jpg);
-        height: 590px;
-    background-position-y: -100px;
-    }
+   
     .visual>.txt {
         display: none;
     }
@@ -1672,6 +1682,15 @@ footer>.wrap>.con2>.con3>.wrap>a:last-child:hover {
     }
     footer>.wrap>.con2>.con3>.wrap>a {
         font-size: 11px;
+    }
+}
+
+@media (max-width:380px) {
+    .visual {
+        height: 450px;
+    }
+    footer>.wrap>.con2 {
+        padding: 20px;
     }
 }
 
